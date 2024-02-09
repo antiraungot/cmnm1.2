@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chúc mừng năm mới!</title>
+    <style>
+        body,
+        html {
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #000000;
+        }
+
+        #particles-js {
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+        }
+
+        #message {
+            font-size: 24px;
+            text-align: center;
+            margin-top: 100px;
+            color: #b8f60f;
+            animation: blink-animation 1s infinite;
+            /* Tạo hiệu ứng nhấp nháy */
+        }
+
+        @keyframes blink-animation {
+            0% {
+                opacity: 1;
+            }
+
+            50% {
+                opacity: 0;
+            }
+
+            100% {
+                opacity: 1;
+            }
+        }
+
+        #image-container {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        #image-container img {
+            width: 150px;
+            /* Điều chỉnh kích thước của hình ảnh */
+            height: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="particles-js"></div>
+    <div id="message">Chúc mừng năm mới! Chúc ae trong nhóm năm mới sức khỏe dồi dào, an khang thịnh vượng!</div>
+    <div id="image-container">
+        <img src="https://lh3.googleusercontent.com/zK-rUmhGjsOi2TvCyfspCPlJVRCgC04G3GKHwm_K-0TqVp5ucL2TEu74V-sKZ_RhY96M_w=s113"
+            alt="Ảnh chúc mừng năm mới">
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script>
+        particlesJS("particles-js", {
+            // Cấu hình pháo hoa
+        });
+    </script>
+</body>
+
+</html>
